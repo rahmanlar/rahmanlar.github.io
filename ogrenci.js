@@ -1,3 +1,5 @@
+// Forked from https://github.com/sh4dowb/eba-canli-ders-crossplatform
+
 if (window.location.toString().includes("liveMiddleware")) {
     $.ajax({
         url: "https://sebitvcloud.com/getlivelessoninfo",
