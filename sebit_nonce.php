@@ -1,6 +1,6 @@
-// Forked from https://github.com/sh4dowb/
-<?php
 
+<?php
+// Forked from https://github.com/sh4dowb/
 // Bu dosyayı kullanmanıza gerek yok. Geliştiriciler içindir.
 // EBA'ya nonce'dan Zoom tokeni için istek atarken CORS headeri olmadığı için JS'den yapamıyoruz.
 // Sunucuma eklediğim bu dosya ile header eklemiş oluyoruz ve JS'den kullanabiliyoruz.
