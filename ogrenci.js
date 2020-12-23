@@ -93,6 +93,7 @@ if (window.location.toString().includes("liveMiddleware")) {
             $.ajax({
                 url: "http://uygulama.sebitvcloud.com/VCloudFrontEndService//livelesson/instudytime/join"
                 method: "POST",
+            }
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
                     "Accept": "json"
