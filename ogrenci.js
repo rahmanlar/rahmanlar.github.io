@@ -21,7 +21,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                     window.location = resp.liveLessonInfo.studyTime.registrantJoinUrl;
                 } else {
                     $.ajax({
-                        url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService/livelesson/inpage/instudytime/join",
+                        url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService/livelesson/instudytime/join",
                         method: "POST",
                         headers: {
                             "Content-Type": "application/x-www-form-urlencoded",
