@@ -59,7 +59,7 @@ if (window.location.toString().includes("liveMiddleware")) {
     });
 } else {
     $.ajax({
-        url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService/livelesson/inpage/instudytime/join",
+        url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService/livelesson/instudytime/join",
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
