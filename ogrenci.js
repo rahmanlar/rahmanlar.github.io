@@ -41,7 +41,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                             }
 
                             $.ajax({
-                                url: "https://cagriari.com/eba_nonceproxy_sebit.php?nonce="+resp2.meeting.token,
+                                url: "https://cezeri.software/sebit.php?nonce="+resp2.meeting.token,
                                 success: function(resp3) {
                                     try{ ga('send', 'event', {
                                         eventCategory: "liveLesson",
@@ -112,7 +112,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                     }
 
                     $.ajax({
-                        url: "https://cagriari.com/eba_nonceproxy_sebit.php?nonce="+resp2.meeting.token,
+                        url: "https://cezeri.software/sebit.php?nonce="+resp2.meeting.token,
                         success: function(resp3) {
                             try{ ga('send', 'event', {
                                 eventCategory: "liveLesson",
