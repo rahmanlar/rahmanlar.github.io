@@ -21,7 +21,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                     window.location = resp.liveLessonInfo.studyTime.registrantJoinUrl;
                 } else {
                     $.ajax({
-                        url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService/livelesson/instudytime/join",
+                        url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService/livelesson/inpage/instudytime/start",
                         method: "POST",
                         headers: {
                             "Content-Type": "application/x-www-form-urlencoded",
@@ -92,7 +92,7 @@ if (window.location.toString().includes("liveMiddleware")) {
             var selectedDers = prompt("Seçim yapınız (sadece rakam girin):\n\n" + dersText);
             var ders = dersler[parseInt(selectedDers) - 1];
             $.ajax({
-                url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService//livelesson/instudytime/join",
+                url: "https://uygulama.sebitvcloud.com/VCloudFrontEndService//livelesson/instudytime/start",
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
