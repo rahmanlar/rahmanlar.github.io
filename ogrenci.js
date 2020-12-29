@@ -49,7 +49,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                                         eventLabel: ""
                                     }); }catch(a){}
                                     console.log(resp3,resp2)
-                                   window.location = "https://us02web.zoom.us/j/" + "?tk=" + resp3.substring(1).split('|')[0];
+                                   window.location = "https://us02web.zoom.us/j/"+resp.liveLessonInfo.studyTime.studyTimeId + "?tk=" + resp3.substring(1).split('|')[0];
                                 }
                             });
                         }
