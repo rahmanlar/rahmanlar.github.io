@@ -1,3 +1,4 @@
+// Forked from sh4dowb
 if (window.location.toString().includes("liveMiddleware")) {
     $.ajax({
         url: "https://sebitvcloud.com/getlivelessoninfo",
