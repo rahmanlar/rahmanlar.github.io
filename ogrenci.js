@@ -48,7 +48,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                                         eventLabel: ""
                                     }); }catch(a){}
                                     console.log(resp3,resp2)
-                                    window.location = resp2.meeting.url + "?tk=" + resp3.substring(1).split('|')[0];
+                                    window.location = "https://us02web.zoom.us/j/"+resp.liveLessonInfo.studyTime.studyTimeId + "?tk=" + resp3.substring(1).split('|')[0];
                                 }
                             });
                         }
@@ -118,7 +118,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                                 eventAction: "join",
                                 eventLabel: ""
                             }); }catch(a){}
-                            window.location = resp2.meeting.url + "?tk=" + resp3.substring(1).split('|')[0];
+                            window.location = "https://us02web.zoom.us/j/"+resp.liveLessonInfo.studyTime.studyTimeId + "?tk=" + resp3.substring(1).split('|')[0];
                         }
                     });
                 }
