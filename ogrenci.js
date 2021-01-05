@@ -1,5 +1,3 @@
-// Forked from https://github.com/sh4dowb/eba-canli-ders-crossplatform
-
 if (window.location.toString().includes("liveMiddleware")) {
     $.ajax({
         url: "https://sebitvcloud.com/getlivelessoninfo",
@@ -15,7 +13,7 @@ if (window.location.toString().includes("liveMiddleware")) {
         dataType: "json",
         success: function(resp) {
             if (resp.liveLessonInfo.studyTime == null)
-                alert('aktif canlÄ± ders yok');
+                alert('aktif canlı ders yok');
             else {
                 if(resp.liveLessonInfo.studyTime.registrantJoinUrl){
                     window.location = resp.liveLessonInfo.studyTime.registrantJoinUrl;
@@ -36,7 +34,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                         dataType: "json",
                         success: function(resp2) {
                             if (resp2.success == false) {
-                                alert("bir hata oluÅŸtu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha baÅŸlamadÄ±.'));
+                                alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                                 return;
                             }
 
@@ -49,7 +47,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                                         eventLabel: ""
                                     }); }catch(a){}
                                     console.log(resp3,resp2)
-                                   window.location = "https://us02web.zoom.us/j/"+resp.liveLessonInfo.studyTime.studyTimeId + "?tk=" + resp3.substring(1).split('|')[0];
+                                    window.location = resp2.meeting.url + "?tk=" + resp3.substring(1).split('|')[0];
                                 }
                             });
                         }
@@ -119,7 +117,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                                 eventAction: "join",
                                 eventLabel: ""
                             }); }catch(a){}
-                            window.location = "https://us02web.zoom.us/j/"+resp.liveLessonInfo.studyTime.studyTimeId + "?tk=" + resp3.substring(1).split('|')[0];
+                            window.location = resp2.meeting.url + "?tk=" + resp3.substring(1).split('|')[0];
                         }
                     });
                 }
